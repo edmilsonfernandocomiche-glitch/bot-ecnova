@@ -5,3 +5,4 @@ export { REVERSE_D_ALEMBERT } from './reverse_dalembert';
 export { REVERSE_MARTINGALE } from './reverse_martingale';
 export { STRATEGY_1_3_2_6 } from './strategy_1_3_2_6';
 export { macdSarRobustStrategy } from './macd_sar_robust';
+export { macdSarRobustConfig } from './macd_sar_robust_config';
