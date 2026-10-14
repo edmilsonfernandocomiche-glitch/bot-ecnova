@@ -7,6 +7,7 @@ export * from './dashboard';
 export * from './run-panel';
 export * from './transactions';
 export * from './z-indexes';
+export * from './quick-strategies';
 
 // Export specific items to avoid conflicts
 export { tabs_title as bot_contents_tabs_title } from './bot-contents';
