@@ -677,7 +677,7 @@ export const STRATEGIES = (): TStrategies => ({
             ],
         ],
     },
-        MACD_SAR_ROBUST: {
+        [MACD_SAR_ROBUST]: {
         name: 'macd_sar_robust',
         label: () => 'MACD + SAR Tendência Forte',
         rs_strategy_name: 'macd_sar_robust',
