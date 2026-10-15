@@ -678,9 +678,7 @@ export const STRATEGIES = (): TStrategies => ({
                 TICK_COUNT(),
                 CHECKBOX_MAX_STAKE(),
                 MAX_STAKE(),
-            ],
-        ],
-    },
-    },
-
-});
+      ],
+    ],
+  },
+};
