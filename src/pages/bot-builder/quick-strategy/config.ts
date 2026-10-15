@@ -19,6 +19,7 @@ import {
     REVERSE_D_ALEMBERT,
     REVERSE_MARTINGALE,
     STRATEGY_1_3_2_6,
+    MACD_SAR_ROBUST
 } from '../../../constants/quick-strategies';
 import { LocalizeHTMLForSellConditions } from './localize_html';
 import { TConfigItem, TStrategies, TValidationItem } from './types';
@@ -676,4 +677,34 @@ export const STRATEGIES = (): TStrategies => ({
             ],
         ],
     },
+        MACD_SAR_ROBUST: {
+        name: 'macd_sar_robust',
+        label: () => 'MACD + SAR Tendência Forte',
+        rs_strategy_name: 'macd_sar_robust',
+        description: MACD_SAR_ROBUST,
+        fields: [
+            [
+                LABEL_SYMBOL(),
+                SYMBOL(),
+                LABEL_TRADETYPE(),
+                TRADETYPE(),
+                LABEL_PURCHASE_TYPE(),
+                PURCHASE_TYPE(),
+                LABEL_STAKE(),
+                STAKE(),
+                LABEL_DURATION(),
+                DURATION_TYPE(),
+                DURATION(),
+            ],
+            [
+                LABEL_PROFIT(),
+                PROFIT(),
+                LABEL_LOSS(),
+                LOSS(),
+                CHECKBOX_MAX_STAKE(),
+                MAX_STAKE(),
+            ],
+        ],
+    },
+
 });
