@@ -1,6 +1,5 @@
 import { config as qs_config } from '@/external/bot-skeleton';
 import {
-    localize1326,
     localizeDAlembergOnStatReset,
     localizeDAlembert,
     localizeMartingale,
