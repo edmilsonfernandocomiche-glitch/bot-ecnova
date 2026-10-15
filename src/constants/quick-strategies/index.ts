@@ -3,6 +3,4 @@ export { MARTINGALE } from './martingale';
 export { OSCARS_GRIND } from './oscars_grind';
 export { REVERSE_D_ALEMBERT } from './reverse_dalembert';
 export { REVERSE_MARTINGALE } from './reverse_martingale';
-export { MACD_SAR_ROBUST } from './macd_sar_robust';
-export { macdSarRobustStrategy } from './macd_sar_robust';
-export { macdSarRobustConfig } from './macd_sar_robust_config';
+export { macdSarRobustStrategy as MACD_SAR_ROBUST } from './macd_sar_robust';
