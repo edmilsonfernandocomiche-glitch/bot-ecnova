@@ -469,11 +469,11 @@ export const STRATEGIES = (): TStrategies => ({
             ],
         ],
     },
-    STRATEGY_1_3_2_6: {
-        name: '1_3_2_6',
-        label: localize1326(),
-        rs_strategy_name: '1-3-2-6',
-        description: STRATEGY_1_3_2_6(),
+       [MACD_SAR_ROBUST]: {
+        name: 'macd_sar_robust',
+        label: () => 'MACD + SAR Tendência Forte',
+        rs_strategy_name: 'macd_sar_robust',
+        description: MACD_SAR_ROBUST,
         fields: [
             [
                 LABEL_SYMBOL(),
@@ -482,17 +482,23 @@ export const STRATEGIES = (): TStrategies => ({
                 TRADETYPE(),
                 LABEL_PURCHASE_TYPE(),
                 PURCHASE_TYPE(),
-                LABEL_LAST_DIGIT_PREDICTION(),
-                LAST_DIGIT_PREDICTION(),
                 LABEL_STAKE(),
                 STAKE(),
                 LABEL_DURATION(),
                 DURATION_TYPE(),
                 DURATION(),
             ],
-            [LABEL_PROFIT(), PROFIT(), LABEL_LOSS(), LOSS()],
+            [
+                LABEL_PROFIT(),
+                PROFIT(),
+                LABEL_LOSS(),
+                LOSS(),
+                CHECKBOX_MAX_STAKE(),
+                MAX_STAKE(),
+            ],
         ],
     },
+ 
     ACCUMULATORS_MARTINGALE: {
         name: 'accumulators_martingale',
         label: localizeMartingale(),
@@ -677,33 +683,6 @@ export const STRATEGIES = (): TStrategies => ({
             ],
         ],
     },
-        [MACD_SAR_ROBUST]: {
-        name: 'macd_sar_robust',
-        label: () => 'MACD + SAR Tendência Forte',
-        rs_strategy_name: 'macd_sar_robust',
-        description: MACD_SAR_ROBUST,
-        fields: [
-            [
-                LABEL_SYMBOL(),
-                SYMBOL(),
-                LABEL_TRADETYPE(),
-                TRADETYPE(),
-                LABEL_PURCHASE_TYPE(),
-                PURCHASE_TYPE(),
-                LABEL_STAKE(),
-                STAKE(),
-                LABEL_DURATION(),
-                DURATION_TYPE(),
-                DURATION(),
-            ],
-            [
-                LABEL_PROFIT(),
-                PROFIT(),
-                LABEL_LOSS(),
-                LOSS(),
-                CHECKBOX_MAX_STAKE(),
-                MAX_STAKE(),
-            ],
         ],
     },
 
