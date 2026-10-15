@@ -681,7 +681,6 @@ export const STRATEGIES = (): TStrategies => ({
             ],
         ],
     },
-        ],
     },
 
 });
