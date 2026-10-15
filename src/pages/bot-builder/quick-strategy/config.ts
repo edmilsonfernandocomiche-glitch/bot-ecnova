@@ -18,7 +18,6 @@ import {
     OSCARS_GRIND,
     REVERSE_D_ALEMBERT,
     REVERSE_MARTINGALE,
-    STRATEGY_1_3_2_6,
     MACD_SAR_ROBUST
 } from '../../../constants/quick-strategies';
 import { LocalizeHTMLForSellConditions } from './localize_html';
