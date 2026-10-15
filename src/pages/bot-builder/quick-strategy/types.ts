@@ -131,6 +131,7 @@ export type TRsStrategyName =
     | `accumulators_reverse_martingale_on_stat_reset`
     | `accumulators_reverse_dalembert`
     | `accumulators_reverse_dalembert_on_stat_reset`;
+    | 'macd_sar_robust'
 
 export type TDurationType = 't' | 's' | 'm' | 'h' | 'd';
 
